@@ -59,3 +59,9 @@ To do this:
 2. Run `git merge {name of branch to be merged}`
 3. This opens a vim file in the terminal so that you can add a merge message. This is optional.
 4. Type `:q!` in the vim window if you don’t want to include a merge message 
+
+
+
+Forking remote repositories: To make a copy of repository onto your github account. (This is different from cloning as cloning lets us work on the repository locally while forking copies a repo someone else owns into our own account and now, you own the copy)
+Once you've forked a repository you can clone it locally, work on it and then upload it to your forked remote repository.
+To incorporate the changes you've made on someone else's repository, you have to send them a Pull Request, and if they approve, your changes will get merged in the original repository.
