@@ -1,0 +1,5 @@
+Start with `git init` in terminal to initialise git in the local directory
+
+Staging Area: A middle ground where you can decide which files you want to commit to the master/main or any other branch of the repository. 
+To see what files are currently in the staging area, run `git status` in the terminal
+To add files/folders to the staging area, run `git add {file/folder path}`. To add all the files in the working directory, run `git add .`
