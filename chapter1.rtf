@@ -30,7 +30,28 @@ Adding the Local Repository to a remote server on GitHub:\
 Add a repository from your account from the GitHub web client.\
 Follow the Command Line instructions given in the Quick Setup window:\
 `git remote add origin \{repository link\}` (`origin` is the name of the remote repo)\
+Push the changes to the remote repo:\
 `git push -u origin master` (`-u` links the remote and local repositories)\
 \
+\
+\
 GitIgnore Files: Files which contain sensitive or irrelevant information which you don\'92t want to push onto the remote repository.\
-Make a file in the working directory called `.gitignore` . Type all the file names, separated by newline characters, which you want to ignore while committing to git into the `.gitignore` file}
+Make a file in the working directory called `.gitignore` . Type all the file names, separated by newline characters, which you want to ignore while committing to git into the `.gitignore` file.\
+Tips:\
+1. You can use # sign to add comments in the .gitignore files\
+2. You can use * symbol as a wild card to ignore all the files of a particular extension (ex- `*.txt`)\
+\
+\
+\
+Cloning a repository from GitHub: Copying a remote repository and all its save points into our local device\
+To do this:\
+1. Copy the link of the remote repo from the GitHub Web Client by navigating to the repository and clicking on the \'93Clone or Download\'94 button\
+2. Run `git clone \{repo link\}` in the terminal\
+\
+\
+\
+Branching repositories: To simultaneously work on a part of the repo without affecting the main/master branch. \
+To made a branch, run `git branch \{branch name\}`\
+To check what branches you have, run `git branch` (the * sign in the output denotes what branch you are on right now) \
+To switch branches, run `git checkout \{branch name\}`\
+You can edit your files here and also commit them locally and push them to the remote repository by running `git push -u origin \{branch name\}`}
