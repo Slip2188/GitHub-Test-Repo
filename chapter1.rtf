@@ -5,11 +5,32 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww13440\viewh7800\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Start with `git init` in terminal to initialise git in the local directory\
+\f0\fs24 \cf0 Flow of Local Git files:\
+1. The git initialised Working Directory\
+2. The Staging area (where you can add the files you want git to track from the Working Directory)\
+3. The Local Repository (Where all the save points and located of the Working Directory) \
+\
+Start with `git init` in terminal to initialise git in the working directory\
 \
 Staging Area: A middle ground where you can decide which files you want to commit to the master/main or any other branch of the repository. \
 To see what files are currently in the staging area, run `git status` in the terminal\
 To add files/folders to the staging area, run `git add \{file/folder path\}`. To add all the files in the working directory, run `git add .`\
+To remove all files from the staging area, run `git rm \'97cached -r .` (`-r` is a flag that means recursive)\
+To remove a particular file from the staging area, run `git restore \'97staged \{filename\}`\
 \
 Committing Changes is finalising all the files you want to add in the staging area and creating a savepoint. To do this, run `git commit`. To add a message to the commit use the `-m` flag like this `git commit -m \'93message\'94` (Use present tense in message as per convention)\
-You can see all the commits you\'92ve made by using `git log`}
+You can see all the commits you\'92ve made by using `git log`\
+\
+You can compare a current non committed file with its last committed save-point by running `git diff \{filename\}`  \
+\
+You can revert back a file to the latest save point in your Working Directory (with the help of the Local Repository) by running `git checkout \{filename\}`   \
+\
+\
+Adding the Local Repository to a remote server on GitHub:\
+Add a repository from your account from the GitHub web client.\
+Follow the Command Line instructions given in the Quick Setup window:\
+`git remote add origin \{repository link\}` (`origin` is the name of the remote repo)\
+`git push -u origin master` (`-u` links the remote and local repositories)\
+\
+GitIgnore Files: Files which contain sensitive or irrelevant information which you don\'92t want to push onto the remote repository.\
+Make a file in the working directory called `.gitignore` . Type all the file names, separated by newline characters, which you want to ignore while committing to git into the `.gitignore` file}
