@@ -1,4 +1,4 @@
-# GitHub-Test-Repo
+# GitHub Notes, Tips and Tricks
 This repo is used for practicing using GitHub. Part of The Complete Web Development Bootcamp by Angela Yu
 
 
